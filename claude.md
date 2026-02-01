@@ -60,16 +60,29 @@ When asked to create a video, motion graphic, or animated content:
 When asked to create a voiceover, narration, or speech:
 
 - **Service**: WaveSpeed API
-- **Model**: `eleven-labs-v3` (ElevenLabs V3)
+- **Model**: ElevenLabs Eleven V3
+- **Endpoint**: `https://api.wavespeed.ai/api/v3/elevenlabs/eleven-v3`
+- **Cost**: $0.10 per 1000 characters
 - **Use cases**: Video narration, product demos, explainers
 
 ```bash
 # Example API call for voiceover
-curl -X POST "https://api.wavespeed.ai/v1/audio/generate" \
+curl -X POST "https://api.wavespeed.ai/api/v3/elevenlabs/eleven-v3" \
   -H "Authorization: Bearer 2cfe564e46748e4217ce5c38fa3213fe61479fdacd40945bdc4c3794b8fe81f5" \
   -H "Content-Type: application/json" \
-  -d '{"model": "eleven-labs-v3", "text": "Your script here"}'
+  -d '{
+    "text": "Your script here",
+    "voice_id": "21m00Tcm4TlvDq8ikWAM",
+    "stability": 0.5,
+    "similarity": 0.75
+  }' --output voiceover.mp3
 ```
+
+**Voice IDs** (common options):
+- `21m00Tcm4TlvDq8ikWAM` - Rachel (female, calm)
+- `EXAVITQu4vr4xnSDxMaL` - Bella (female, soft)
+- `ErXwobaYiN019PkySvjV` - Antoni (male, warm)
+- `VR6AewLTigWG4xSOukaG` - Arnold (male, deep)
 
 ### Image Generation
 
