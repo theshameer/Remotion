@@ -899,8 +899,8 @@ export const ProductDemo: React.FC = () => {
 
   return (
     <AbsoluteFill style={{backgroundColor: COLORS.red}}>
-      {/* Voiceover - uncomment when audio file is added */}
-      {/* <Audio src={staticFile('audio/voiceover.mp3')} volume={1} /> */}
+      {/* Voiceover */}
+      <Audio src={staticFile('audio/voiceover.mp3')} volume={1} />
 
       {/* Intro: 0-3.5s */}
       <Sequence from={0} durationInFrames={fps * 3.5}>
