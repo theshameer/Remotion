@@ -53,7 +53,7 @@ When asked to create a video, motion graphic, or animated content:
 
 ## AI Generation (WaveSpeed)
 
-**API Key**: `ak-lkwvswrggxpyvzfpsypayc`
+**API Key**: `2cfe564e46748e4217ce5c38fa3213fe61479fdacd40945bdc4c3794b8fe81f5`
 
 ### Voiceover Generation
 
@@ -66,7 +66,7 @@ When asked to create a voiceover, narration, or speech:
 ```bash
 # Example API call for voiceover
 curl -X POST "https://api.wavespeed.ai/v1/audio/generate" \
-  -H "Authorization: Bearer ak-lkwvswrggxpyvzfpsypayc" \
+  -H "Authorization: Bearer 2cfe564e46748e4217ce5c38fa3213fe61479fdacd40945bdc4c3794b8fe81f5" \
   -H "Content-Type: application/json" \
   -d '{"model": "eleven-labs-v3", "text": "Your script here"}'
 ```
@@ -82,7 +82,7 @@ When asked to create images, graphics, or visuals:
 ```bash
 # Example API call for image generation
 curl -X POST "https://api.wavespeed.ai/v1/images/generate" \
-  -H "Authorization: Bearer ak-lkwvswrggxpyvzfpsypayc" \
+  -H "Authorization: Bearer 2cfe564e46748e4217ce5c38fa3213fe61479fdacd40945bdc4c3794b8fe81f5" \
   -H "Content-Type: application/json" \
   -d '{"model": "flux-kontext-pro", "prompt": "Your prompt here"}'
 ```
