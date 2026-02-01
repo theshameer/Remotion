@@ -51,6 +51,51 @@ When asked to create a video, motion graphic, or animated content:
 
 ---
 
+## AI Generation (WaveSpeed)
+
+**API Key**: `ak-lkwvswrggxpyvzfpsypayc`
+
+### Voiceover Generation
+
+When asked to create a voiceover, narration, or speech:
+
+- **Service**: WaveSpeed API
+- **Model**: `eleven-labs-v3` (ElevenLabs V3)
+- **Use cases**: Video narration, product demos, explainers
+
+```bash
+# Example API call for voiceover
+curl -X POST "https://api.wavespeed.ai/v1/audio/generate" \
+  -H "Authorization: Bearer ak-lkwvswrggxpyvzfpsypayc" \
+  -H "Content-Type: application/json" \
+  -d '{"model": "eleven-labs-v3", "text": "Your script here"}'
+```
+
+### Image Generation
+
+When asked to create images, graphics, or visuals:
+
+- **Service**: WaveSpeed API
+- **Model**: `flux-kontext-pro` (Flux Kontext Pro)
+- **Use cases**: Product images, backgrounds, illustrations
+
+```bash
+# Example API call for image generation
+curl -X POST "https://api.wavespeed.ai/v1/images/generate" \
+  -H "Authorization: Bearer ak-lkwvswrggxpyvzfpsypayc" \
+  -H "Content-Type: application/json" \
+  -d '{"model": "flux-kontext-pro", "prompt": "Your prompt here"}'
+```
+
+### Workflow with Remotion
+
+1. Generate voiceover with ElevenLabs V3 → Save to `public/audio/`
+2. Generate images with Flux Kontext Pro → Save to `public/images/`
+3. Import into Remotion using `staticFile()`
+4. Sync audio with `<Audio>` component
+
+---
+
 ## Project Structure
 
 ```
