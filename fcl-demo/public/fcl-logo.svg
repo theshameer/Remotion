@@ -1,0 +1,6 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#C41E3A"/>
+  <text x="100" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="32">FIRST</text>
+  <text x="100" y="110" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="32">CLASS</text>
+  <text x="100" y="150" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="26">LEARNING</text>
+</svg>

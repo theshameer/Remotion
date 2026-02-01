@@ -200,22 +200,16 @@ const IntroScene: React.FC = () => {
           gap: 30,
         }}
       >
-        <div
+        <Img
+          src={staticFile('fcl-logo.svg')}
           style={{
             opacity: logoOpacity,
             transform: `scale(${logoScale})`,
-            backgroundColor: COLORS.white,
-            width: 180,
-            height: 180,
-            borderRadius: 30,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            width: 220,
+            height: 220,
             boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
           }}
-        >
-          <span style={{fontSize: 90}}>FCL</span>
-        </div>
+        />
         <AnimatedText delay={0.3} fontSize={64} fontWeight={800}>
           First Class Learning
         </AnimatedText>
