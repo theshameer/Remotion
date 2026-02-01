@@ -902,38 +902,38 @@ export const ProductDemo: React.FC = () => {
       {/* Voiceover */}
       <Audio src={staticFile('audio/voiceover.mp3')} volume={1} />
 
-      {/* Intro: 0-3.5s */}
-      <Sequence from={0} durationInFrames={fps * 3.5}>
+      {/* Intro: 0-4s - "Welcome to First Class Learning Camberley. Your trusted partner in education." */}
+      <Sequence from={0} durationInFrames={fps * 4}>
         <IntroScene />
       </Sequence>
 
-      {/* Services Overview: 3.5-7s */}
-      <Sequence from={fps * 3.5} durationInFrames={fps * 3.5}>
+      {/* Services Overview: 4-7s - "We offer expert tuition in Maths, English, and Science." */}
+      <Sequence from={fps * 4} durationInFrames={fps * 3}>
         <ServicesScene />
       </Sequence>
 
-      {/* Maths: 7-10.5s */}
-      <Sequence from={fps * 7} durationInFrames={fps * 3.5}>
+      {/* Maths: 7-13s - "Our Mathematics programme builds fundamental skills..." */}
+      <Sequence from={fps * 7} durationInFrames={fps * 6}>
         <MathsScene />
       </Sequence>
 
-      {/* English: 10.5-14s */}
-      <Sequence from={fps * 10.5} durationInFrames={fps * 3.5}>
+      {/* English: 13-18s - "Our English programme provides comprehensive coverage..." */}
+      <Sequence from={fps * 13} durationInFrames={fps * 5}>
         <EnglishScene />
       </Sequence>
 
-      {/* Science: 14-17.5s */}
-      <Sequence from={fps * 14} durationInFrames={fps * 3.5}>
+      {/* Science: 18-23s - "Our Science programme delivers proven results..." */}
+      <Sequence from={fps * 18} durationInFrames={fps * 5}>
         <ScienceScene />
       </Sequence>
 
-      {/* Stats: 17.5-21s */}
-      <Sequence from={fps * 17.5} durationInFrames={fps * 3.5}>
+      {/* Stats: 23-27s - "With over 300 centres nationwide..." */}
+      <Sequence from={fps * 23} durationInFrames={fps * 4}>
         <StatsScene />
       </Sequence>
 
-      {/* CTA: 21-25s */}
-      <Sequence from={fps * 21} durationInFrames={fps * 4}>
+      {/* CTA: 27-32s - "Start your childs journey today..." */}
+      <Sequence from={fps * 27} durationInFrames={fps * 5}>
         <CTAScene />
       </Sequence>
     </AbsoluteFill>
